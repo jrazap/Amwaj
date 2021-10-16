@@ -153,6 +153,12 @@ hr {
   .nav ul li:not(:last-child){
     display: none;
   }
+  .main .side-content .line1 {
+    top: 15vh;
+  }
+  .main .side-content .line2 {
+    bottom: 18vh;
+  }
   .main .side-content .social {
     right: 1.5rem;
   }
