@@ -160,10 +160,10 @@ hr {
     font-size: 25px;
   }
   .main .side-content .line1 {
-    top: 15vh;
+    top: 10vh;
   }
   .main .side-content .line2 {
-    bottom: 15vh;
+    bottom: 10vh;
   }
   .main .text .main-text{
     font-size: 5rem;
