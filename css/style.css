@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto:wght@300;400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+:root {
+  --mainColor: #0a657c;
+}
+::selection {
+  background-color: var(--mainColor);
+}
+body {
+  background: url(../img/bg.jpg) no-repeat fixed center;
+  background-size: cover;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+}
+/* NAV SECTION*/
+.nav {
+  padding: 0.5rem 2rem;
+}
+h3.logo {
+  float: left;
+  font-size: 40px;
+  color: var(--mainColor);
+  font-family: "Dancing Script", cursive;
+}
+.nav ul {
+  float: right;
+}
+.nav ul li {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  margin: auto 1rem;
+  display: inline;
+  list-style: none;
+  font-family: "Bebas Neue", cursive;
+  cursor: pointer;
+}
+.nav ul li:hover {
+  color: #fff;
+}
+.nav ul li.active {
+  border-bottom: 3px solid;
+}
+.nav ul li.active,
+.nav ul li:last-child {
+  color: #fff;
+}
+/* MAIN SECTION */
+.main .side-content .line1,
+.main .side-content .line2 {
+  position: absolute;
+  right: 3rem;
+  width: 1px;
+  height: 20vh;
+  border-right: 1px solid;
+}
+.main .side-content .line1 {
+  top: 20vh;
+}
+.main .side-content .line2 {
+  bottom: 20vh;
+}
+.main .side-content .social {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .side-content .social li {
+  font-size: 30px;
+  margin-bottom: 1rem;
+  display: block;
+  list-style: none;
+  cursor: pointer;
+}
+.main .side-content .social li:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.main .text {
+  position: absolute;
+  right: 6rem;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.main .text .main-text {
+  font-size: 8rem;
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+}
+.main .text h3 {
+  font-size: 3rem;
+  position: absolute;
+  bottom: -17vh;
+  right: 10rem;
+  font-family: "Bebas Neue", cursive;
+}
+.main .text h3 span {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+hr {
+  border: none;
+  border-bottom: 1px solid;
+  width: 20vh;
+  position: absolute;
+  bottom: -15vh;
+  right: -3rem;
+}
+.box {
+  position: absolute;
+  bottom: 15vh;
+  left: 30vw;
+}
+.box h2 {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.box p {
+  width: 55%;
+}
+.box button {
+  color: #fff;
+  background-color: inherit;
+  border: 2px solid #fff;
+  padding: 0.3rem 0.8rem;
+  margin-top: 1rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.box button:hover {
+  background-color: #fff;
+  color: var(--mainColor);
+}
+@media (max-width: 375px){
+  h3.logo{
+    color: #fff;
+    font-size: 35px;
+  }
+  .nav ul {
+    margin-top: .8rem;
+  }
+  .nav ul li {
+    font-size: 25px;
+    margin: auto .5rem;
+  }
+  .nav ul li:not(:last-child){
+    display: none;
+  }
+  .main .side-content .social {
+    right: 1.5rem;
+  }
+  .main .side-content .social li {
+    font-size: 25px;
+  }
+  .main .text .main-text{
+    font-size: 5rem;
+  }
+  hr {
+    position: relative;
+    bottom: -15vh;
+    right: -8rem;
+    width: 25vw;
+  }
+  .main .text h3 {
+    font-size: 2.5rem;
+    position: relative;
+    bottom: -18vh;
+    left: 10vw;
+  }
+  .main .text h3 span {
+    font-size: 2rem;
+  }
+  .box {
+   display: none;
+  }
+}
+@media (min-width: 376px) and(max-width: 575px) {
+  h3.logo{
+    color: #fff;
+    font-size: 35px;
+  }
+  .nav ul {
+    margin-top: .8rem;
+  }
+  .nav ul li {
+    font-size: 25px;
+    margin: auto .5rem;
+  }
+  .nav ul li:not(:last-child){
+    display: none;
+  }
+  .main .side-content .social {
+    right: 1.5rem;
+  }
+  .main .side-content .social li {
+    font-size: 25px;
+  }
+  .main .text .main-text{
+    font-size: 6rem;
+  }
+  hr {
+    position: relative;
+    bottom: -10vh;
+    right: -6rem;
+  }
+  .main .text h3 {
+    font-size: 2.5rem;
+    position: relative;
+    bottom: -13vh;
+    right: 1vw;
+  }
+  .main .text h3 span {
+    font-size: 2rem;
+  }
+  .box {
+   display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  h3.logo{
+    color: #fff;
+    font-size: 35px;
+  }
+  .nav ul {
+    margin-top: .8rem;
+  }
+  .nav ul li {
+    font-size: 20px;
+    margin: auto .5rem;
+  }
+  .main .side-content .social {
+    right: 1.5rem;
+  }
+  .main .side-content .social li {
+    font-size: 25px;
+  }
+  .main .text .main-text {
+    font-size: 6rem;
+  }
+  .main .text h3 {
+    font-size: 2.5rem;
+  }
+  .main .text h3 span {
+    font-size: 2rem;
+  }
+  .box {
+    bottom: 14vh;
+    left: 10vw;
+  }
+  .box h2 {
+    font-size: 1.5rem;
+  }
+  .box button {
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav ul {
+    margin-top: 0.5rem;
+  }
+  .nav ul li {
+    font-size: 25px;
+  }
+  .main .side-content .social {
+    right: 1.5rem;
+  }
+  .main .side-content .social li {
+    font-size: 25px;
+  }
+  .main .text .main-text {
+    font-size: 7rem;
+  }
+  .box {
+    bottom: 15vh;
+    left: 15vw;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main .side-content .social {
+    right: 1.5rem;
+  }
+  .main .side-content .social li {
+    font-size: 25px;
+  }
+  .main .text .main-text {
+    font-size: 7rem;
+  }
+  .box {
+    bottom: 15vh;
+    left: 20vw;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .main .side-content .social {
+    right: 1.5rem;
+  }
+  .main .side-content .social li {
+    font-size: 25px;
+  }
+  .main .text .main-text {
+    font-size: 7rem;
+  }
+  .box {
+    bottom: 15vh;
+    left: 25vw;
+  }
+}
+@media (min-width: 1300px) {
+  .main .side-content .social {
+    right: 1.5rem;
+  }
+  .main .side-content .social li {
+    font-size: 25px;
+  }
+  .main .text .main-text {
+    font-size: 8rem;
+  }
+  .box {
+    bottom: 15vh;
+  }
+}
