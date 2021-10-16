@@ -122,6 +122,7 @@ hr {
 }
 .box p {
   width: 55%;
+  color: rgba(255, 255, 255, 0.5);
 }
 .box button {
   color: #fff;
