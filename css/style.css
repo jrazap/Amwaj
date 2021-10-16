@@ -159,6 +159,12 @@ hr {
   .main .side-content .social li {
     font-size: 25px;
   }
+  .main .side-content .line1 {
+    top: 15vh;
+  }
+  .main .side-content .line2 {
+    bottom: 15vh;
+  }
   .main .text .main-text{
     font-size: 5rem;
   }
