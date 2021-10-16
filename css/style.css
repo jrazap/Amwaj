@@ -138,7 +138,7 @@ hr {
   background-color: #fff;
   color: var(--mainColor);
 }
-@media (max-width: 375px){
+@media (max-width: 575px){
   h3.logo{
     color: #fff;
     font-size: 35px;
@@ -152,12 +152,6 @@ hr {
   }
   .nav ul li:not(:last-child){
     display: none;
-  }
-  .main .side-content .line1 {
-    top: 15vh;
-  }
-  .main .side-content .line2 {
-    bottom: 18vh;
   }
   .main .side-content .social {
     right: 1.5rem;
@@ -171,56 +165,14 @@ hr {
   hr {
     position: relative;
     bottom: -15vh;
-    right: -8rem;
+    right: -5rem;
     width: 25vw;
   }
   .main .text h3 {
     font-size: 2.5rem;
     position: relative;
     bottom: -18vh;
-    left: 10vw;
-  }
-  .main .text h3 span {
-    font-size: 2rem;
-  }
-  .box {
-   display: none;
-  }
-}
-@media (min-width: 376px) and(max-width: 575px) {
-  h3.logo{
-    color: #fff;
-    font-size: 35px;
-  }
-  .nav ul {
-    margin-top: .8rem;
-  }
-  .nav ul li {
-    font-size: 25px;
-    margin: auto .5rem;
-  }
-  .nav ul li:not(:last-child){
-    display: none;
-  }
-  .main .side-content .social {
-    right: 1.5rem;
-  }
-  .main .side-content .social li {
-    font-size: 25px;
-  }
-  .main .text .main-text{
-    font-size: 6rem;
-  }
-  hr {
-    position: relative;
-    bottom: -10vh;
-    right: -6rem;
-  }
-  .main .text h3 {
-    font-size: 2.5rem;
-    position: relative;
-    bottom: -13vh;
-    right: 1vw;
+    right: 5vw;
   }
   .main .text h3 span {
     font-size: 2rem;
