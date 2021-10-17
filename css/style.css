@@ -242,6 +242,9 @@ h1.head {
   .box {
     display: none;
   }
+  h1.head {
+    font-size: 5rem;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   h3.logo {
