@@ -8,53 +8,137 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/jquery.pagepiling.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Amwaj | Home</title>
   </head>
   <body>
-    <section class="nav">
+    <div class="nav">
       <h3 class="logo">Amwaj</h3>
-      <ul>
-        <li class="active">HOME</li>
-        <li id="about">ABOUT</li>
-        <li id="blog">BLOG</li>
-        <li id="services">SERVICES</li>
-        <li id="contact">CONTACT</li>
+      <ul id="menu">
+        <li data-menuanchor="home" class="active">
+          <a href="#home">HOME</a>
+        </li>
+        <li data-menuanchor="about"><a href="#about">ABOUT</a></li>
+        <li data-menuanchor="blog"><a href="#blog">BLOG</a></li>
+        <li data-menuanchor="services"><a href="#services">SERVICES</a></li>
+        <li data-menuanchor="contact"><a href="#contact">CONTACT</a></li>
       </ul>
-      <i class="fas fa-bars navbar"></i>
-    </section>
-    <section class="main">
-      <div class="side-content">
-        <div class="line1"></div>
-        <ul class="social">
-          <li><i class="fab fa-facebook"></i></li>
-          <li><i class="fab fa-twitter"></i></li>
-          <li><i class="fab fa-instagram"></i></li>
-        </ul>
-        <div class="line2"></div>
-        <div class="text">
-          
-          <h3>01 <span>/ 05</span></h3>
-          <hr>
+      <i class="fas fa-bars menuBtn"></i>
+    </div>
+    <div id="pagepiling">
+      <div id="home" class="section">
+        <section class="main">
+          <div class="side-content">
+            <div class="line1"></div>
+            <ul class="social">
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+            </ul>
+            <div class="line2"></div>
+              <h3>01 <span>/ 05</span></h3>
+              <hr />
+          </div>
+          <div class="content">
+            <div class="header">
+              <h1
+                class="mianTitle"
+                data-aos="fade-down"
+                data-aos-duration="1500"
+              >
+                FLOW <br />
+                WITH <br />
+                IT
+              </h1>
+            </div>
+            <div class="box">
+              <h2>
+                Happiness <br />
+                comes <br />
+                in waves
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                saepe obcaecati eum veniam autem fugit.
+              </p>
+              <button>READ MORE</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="about" class="section">
+        <div class="side-content">
+          <div class="line1"></div>
+          <ul class="social">
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+          </ul>
+          <div class="line2"></div>
+            <h3>02 <span>/ 05</span></h3>
+            <hr />
         </div>
+        <h1 class="head">About</h1>
       </div>
-      <div class="content">
-        <div class="text">
-          <h1 class="main-text" data-aos="fade-down" data-aos-duration="1500">FLOW <br> WITH <br> IT</h1>
+      <div id="blog" class="section">
+        <div class="side-content">
+          <div class="line1"></div>
+          <ul class="social">
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+          </ul>
+          <div class="line2"></div>
+            <h3>03 <span>/ 05</span></h3>
+            <hr />
         </div>
+        <h1 class="head">Blog</h1>
       </div>
-      <div class="box">
-          <h2>Happiness <br> comes <br> in waves</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque saepe obcaecati eum veniam autem fugit.</p>
-          <button>READ MORE</button>
+      <div id="services" class="section">
+        <div class="side-content">
+          <div class="line1"></div>
+          <ul class="social">
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+          </ul>
+          <div class="line2"></div>
+            <h3>04 <span>/ 05</span></h3>
+            <hr />
+        </div>
+        <h1 class="head">Services</h1>
       </div>
-    </section>
+      <div id="contact" class="section">
+        <div class="side-content">
+          <div class="line1"></div>
+          <ul class="social">
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+          </ul>
+          <div class="line2"></div>
+            <h3>05 <span>/ 05</span></h3>
+            <hr />
+        </div>
+        <h1 class="head">Contact</h1>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: "#menu",
+          anchors: ["home", "about", "blog", "services", "contact"],
+        });
+      });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init(
-      );
+      AOS.init();
     </script>
     <script src="./js/main.js"></script>
   </body>

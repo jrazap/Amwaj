@@ -4,7 +4,7 @@
   padding: 0;
   text-decoration: none;
 }
-html{
+html {
   overflow-x: hidden;
 }
 :root {
@@ -13,17 +13,45 @@ html{
 ::selection {
   background-color: var(--mainColor);
 }
-body {
+h1.head {
+  font-size: 6rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* PAGEPILLING */
+#pp-nav {
+  bottom: 8vh;
+}
+#pp-nav.right {
+  right: 50%;
+  transform: translate(50%, 100%);
+}
+#pp-nav li .active span,
+.pp-slidesNav .active span {
+  background: var(--mainColor);
+  border: 2px solid #fff !important;
+}
+#pp-nav li {
+  display: inline-block;
+}
+.section {
   background: url(../img/bg.jpg) no-repeat fixed center;
   background-size: cover;
   font-family: "Segoe UI", sans-serif;
   color: #fff;
 }
+
 /* NAV SECTION*/
 .nav {
-  padding: 0.5rem 2rem;
+  width: 100%;
+  padding: 0.5rem 5rem;
+  position: fixed;
+  z-index: 10;
 }
-h3.logo {
+.nav .logo {
   float: left;
   font-size: 40px;
   color: var(--mainColor);
@@ -34,7 +62,11 @@ h3.logo {
   top: -100px;
   float: right;
   margin: 0.5rem 2rem;
-  transition: all .5s linear;
+  right: 11rem;
+  transition: all 0.5s linear;
+}
+.nav ul li a {
+  color: rgba(255, 255, 255, 0.5);
 }
 .nav ul li {
   color: rgba(255, 255, 255, 0.5);
@@ -45,90 +77,95 @@ h3.logo {
   font-family: "Bebas Neue", cursive;
   cursor: pointer;
 }
-.nav ul li:hover {
+.nav ul li:hover a {
   color: #fff;
 }
 .nav ul.active {
   top: 0;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
-.nav ul li.active {
+.nav ul li.active a {
   color: #fff;
   border-bottom: 3px solid;
 }
-.nav .navbar {
+.nav .menuBtn {
+  color: #fff;
   font-size: 30px;
   position: absolute;
-  right: 2.5rem;
+  right: 12.5rem;
   top: 1.3rem;
   cursor: pointer;
 }
-/* MAIN SECTION */
-.main .side-content .line1,
-.main .side-content .line2 {
+
+/* SIDE CONTENT */
+.side-content .line1,
+.side-content .line2 {
   position: absolute;
   right: 3rem;
   width: 1px;
   height: 20vh;
   border-right: 1px solid;
 }
-.main .side-content .line1 {
+.side-content .line1 {
   top: 17vh;
 }
-.main .side-content .line2 {
+.side-content .line2 {
   bottom: 17vh;
 }
-.main .side-content .social {
+.side-content .social {
   position: absolute;
-  right: 2rem;
+  right: 1.5rem;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.main .side-content .social li {
-  font-size: 30px;
+.side-content .social li {
+  font-size: 25px;
   margin-bottom: 1rem;
   display: block;
   list-style: none;
   cursor: pointer;
 }
-.main .side-content .social li:hover {
+.side-content .social li:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-.main .text {
-  position: absolute;
-  right: 6rem;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-.main .text .main-text {
-  font-size: 8rem;
-  font-family: "Roboto", sans-serif;
-  text-align: right;
-}
-.main .text h3 {
-  width:max-content;
+.side-content h3 {
+  width: max-content;
   font-size: 3rem;
   position: fixed;
-  bottom: -40vh;
-  right: 10rem;
+  bottom: 7vh;
+  right: 16rem;
   font-family: "Bebas Neue", cursive;
 }
-.main .text h3 span {
+.side-content h3 span {
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.5);
 }
-hr {
+.side-content hr {
   border: none;
   border-bottom: 1px solid;
   width: 20vh;
   position: absolute;
-  bottom: -37vh;
-  right: -3rem;
+  bottom: 10vh;
+  right: 3rem;
+}
+
+/* MAIN SECTION */
+.main h1.mianTitle {
+  position: absolute;
+  right: 6rem;
+  top: 50%;
+  transform: translate(0, -50%) !important;
+}
+.main .header .mianTitle {
+  font-size: 8rem;
+  font-family: "Roboto", sans-serif;
+  text-align: right;
 }
 .box {
   position: absolute;
   bottom: 15vh;
   left: 30vw;
+  width: fit-content;
 }
 .box h2 {
   font-size: 2.5rem;
@@ -155,35 +192,30 @@ hr {
   background-color: #fff;
   color: var(--mainColor);
 }
+
+/* MEDIA QUERY */
 @media (max-width: 575px) {
-  h3.logo {
+  .nav h3.logo {
     color: #fff;
     font-size: 35px;
   }
   .nav ul {
     top: -400px;
-    left: 2rem;
-    width: 100%;
-    padding: 0;
+    margin: 3rem 0 0 0;
+    width: 70%;
     background-color: rgba(255, 255, 255, 0.2);
   }
   .nav ul li {
     font-size: 25px;
     margin: 0.3rem;
     font-size: 20px;
-    
+
     padding-left: 1rem;
     display: block;
   }
   .nav ul li.active {
     border-bottom: none;
     border-left: 3px solid #fff;
-  }
-  .main .side-content .social {
-    right: 1.5rem;
-  }
-  .main .side-content .social li {
-    font-size: 25px;
   }
   .main .side-content .line1 {
     margin-top: -2rem;
@@ -213,8 +245,8 @@ hr {
 }
 @media (min-width: 576px) and (max-width: 767px) {
   h3.logo {
-    color: #fff;
-    font-size: 35px;
+    color: #fff !important;
+    font-size: 35px !important;
   }
   .nav ul {
     margin-top: 0.8rem;
@@ -222,15 +254,6 @@ hr {
   .nav ul li {
     font-size: 20px;
     margin: auto 0.5rem;
-  }
-  .nav .navbar{
-    font-size: 25px;
-  }
-  .main .side-content .social {
-    right: 1.5rem;
-  }
-  .main .side-content .social li {
-    font-size: 25px;
   }
   .main .text .main-text {
     font-size: 6rem;
@@ -260,12 +283,6 @@ hr {
   .nav ul li {
     font-size: 25px;
   }
-  .main .side-content .social {
-    right: 1.5rem;
-  }
-  .main .side-content .social li {
-    font-size: 25px;
-  }
   .main .text .main-text {
     font-size: 7rem;
   }
@@ -275,12 +292,6 @@ hr {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .main .side-content .social {
-    right: 1.5rem;
-  }
-  .main .side-content .social li {
-    font-size: 25px;
-  }
   .main .text .main-text {
     font-size: 7rem;
   }
@@ -290,12 +301,6 @@ hr {
   }
 }
 @media (min-width: 1200px) and (max-width: 1299px) {
-  .main .side-content .social {
-    right: 1.5rem;
-  }
-  .main .side-content .social li {
-    font-size: 25px;
-  }
   .main .text .main-text {
     font-size: 7rem;
   }
@@ -305,12 +310,6 @@ hr {
   }
 }
 @media (min-width: 1300px) {
-  .main .side-content .social {
-    right: 1.5rem;
-  }
-  .main .side-content .social li {
-    font-size: 25px;
-  }
   .main .text .main-text {
     font-size: 8rem;
   }
