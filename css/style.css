@@ -56,7 +56,7 @@ h3.logo {
   color: #fff;
   border-bottom: 3px solid;
 }
-.nav .menu {
+.nav .navbar {
   font-size: 30px;
   position: absolute;
   right: 2.5rem;
@@ -224,7 +224,7 @@ hr {
     font-size: 20px;
     margin: auto 0.5rem;
   }
-  .nav .menu{
+  .nav .navbar{
     font-size: 25px;
   }
   .main .side-content .social {

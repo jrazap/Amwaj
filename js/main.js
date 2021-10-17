@@ -1,5 +1,5 @@
 menu = document.querySelector(".nav ul");
-menuToggler = document.querySelector(".nav .menu");
+menuToggler = document.querySelector(".nav .navbar");
 
 menuToggler.onclick = () => {
   menuToggler.classList.toggle("fa-times");
