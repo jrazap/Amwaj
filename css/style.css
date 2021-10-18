@@ -199,7 +199,7 @@ h1.mianTitle {
 /* MEDIA QUERY */
 @media (min-width: 1200px) {
   .box {
-    left: 25vw;
+    left: 30vw;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
