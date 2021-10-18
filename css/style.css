@@ -287,7 +287,7 @@ h1.head {
   .nav ul {
     top: -400px;
     margin: auto;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     right: 0;
     float: left;
     width: 88%;
@@ -305,10 +305,10 @@ h1.head {
     border-bottom: none;
     border-left: 3px solid #fff;
   }
-  .main .side-content .line1 {
+  .side-content .line1 {
     margin-top: -2rem;
   }
-  .main .side-content .line2 {
+  .side-content .line2 {
     margin-bottom: -1.5rem;
   }
   .side-content h3 {
@@ -326,7 +326,7 @@ h1.head {
   .nav {
     width: 105%;
   }
-  h1.head{
+  h1.head {
     font-size: 3rem;
   }
 }
