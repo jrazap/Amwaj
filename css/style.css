@@ -92,7 +92,7 @@ h1.head {
   color: #fff;
   font-size: 30px;
   position: fixed;
-  right: 4.5rem;
+  right: 2.5rem;
   top: 1.7rem;
   cursor: pointer;
 }
@@ -151,16 +151,14 @@ h1.head {
 }
 
 /* MAIN SECTION */
-.main h1.mianTitle {
+h1.mianTitle {
   position: absolute;
-  right: 6rem;
-  top: 50%;
-  transform: translate(0, -50%) !important;
-}
-.main .header .mianTitle {
   font-size: 8rem;
   font-family: "Roboto", sans-serif;
   text-align: right;
+  right: 6rem;
+  top: 50%;
+  transform: translate(0, -50%) !important;
 }
 .box {
   position: absolute;
@@ -198,44 +196,30 @@ h1.head {
 }
 
 /* MEDIA QUERY */
-@media (min-width: 1300px) {
-  .main .text .main-text {
-    font-size: 8rem;
-  }
+@media (min-width: 1200px) {
   .box {
-    bottom: 15vh;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1299px) {
-  .main .text .main-text {
-    font-size: 7rem;
-  }
-  .box {
-    bottom: 15vh;
     left: 25vw;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .main .text .main-text {
+  h1.mianTitle {
     font-size: 7rem;
   }
   .box {
-    bottom: 15vh;
     left: 20vw;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .nav ul {
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
   }
   .nav ul li {
     font-size: 25px;
   }
-  .main .header .mianTitle {
+  .header .mianTitle {
     font-size: 7rem;
   }
   .box {
-    bottom: 15vh;
     left: 10vw;
   }
 }
@@ -245,31 +229,24 @@ h1.head {
     font-size: 35px !important;
   }
   .nav ul {
-    margin-top: 0.8rem;
+    margin: 0.7rem 0.5rem 0 0;
   }
   .nav ul li {
-    font-size: 20px;
+    font-size: 25px;
     margin: auto 0.5rem;
   }
-  .main .text .main-text {
-    font-size: 6rem;
+  .header .mianTitle {
+    font-size: 7rem;
   }
-  .main .text h3 {
+  .side-content h3 {
+    margin-right: 3rem;
     font-size: 2.5rem;
   }
-  .main .text h3 span {
+  .side-content h3 span {
     font-size: 2rem;
   }
   .box {
-    bottom: 14vh;
-    left: 10vw;
-  }
-  .box h2 {
-    font-size: 1.5rem;
-  }
-  .box button {
-    padding: 0.3rem 0.8rem;
-    font-size: 1rem;
+    display: none;
   }
 }
 @media (max-width: 575px) {
@@ -280,9 +257,6 @@ h1.head {
   .nav h3.logo {
     color: #fff;
     font-size: 35px;
-  }
-  .nav .menuBtn {
-    right: 2.5rem;
   }
   .nav ul {
     top: -400px;
@@ -314,7 +288,7 @@ h1.head {
   .side-content h3 {
     margin-right: 3rem;
   }
-  .main .header .mianTitle,
+  .header .mianTitle,
   h1.head {
     font-size: 5rem;
   }
