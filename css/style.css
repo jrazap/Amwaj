@@ -53,6 +53,7 @@ h1.head {
 }
 .nav .logo {
   float: left;
+  margin-left: 1.5rem;
   font-size: 40px;
   color: var(--mainColor);
   font-family: "Dancing Script", cursive;
