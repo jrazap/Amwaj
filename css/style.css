@@ -38,7 +38,7 @@ h1.head {
   display: inline-block;
 }
 .section {
-  background: url(../img/bg.jpg) no-repeat fixed center;
+  background: url(../img/bg.webp) no-repeat fixed center;
   background-size: cover;
   font-family: "Segoe UI", sans-serif;
   color: #fff;
