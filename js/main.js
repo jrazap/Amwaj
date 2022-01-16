@@ -25,7 +25,7 @@ Vue.component("fixed-part", {
     <li><i class="fab fa-instagram"></i></li>
   </ul>
   <div class="line2"></div>
-  <h3> {{layer}} <span>/ {{pad(total,2)}}</span></h3>
+  <h2> {{layer}} <span>/ {{pad(total,2)}}</span></h2>
   <hr />
 </div>`,
 });

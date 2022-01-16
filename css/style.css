@@ -137,7 +137,7 @@ h1.head {
   bottom: 10vh;
   right: 3rem;
 }
-.side-content h3 {
+.side-content h2 {
   width: max-content;
   font-size: 3rem;
   position: fixed;
@@ -146,7 +146,7 @@ h1.head {
   margin-right: 2rem;
   font-family: "Bebas Neue", cursive;
 }
-.side-content h3 span {
+.side-content h2 span {
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -239,11 +239,11 @@ h1.mianTitle {
   .header .mianTitle {
     font-size: 7rem;
   }
-  .side-content h3 {
+  .side-content h2 {
     margin-right: 3rem;
     font-size: 2.5rem;
   }
-  .side-content h3 span {
+  .side-content h2 span {
     font-size: 2rem;
   }
   .box {
@@ -286,7 +286,7 @@ h1.mianTitle {
   .side-content .line2 {
     margin-bottom: -1.5rem;
   }
-  .side-content h3 {
+  .side-content h2 {
     margin-right: 3rem;
   }
   .header .mianTitle,
