@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Landing Page" />
+    <meta name="description" content="Landing Page">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/jquery.pagepiling.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Amwaj | Home</title>
   </head>
@@ -83,20 +89,20 @@
         });
       });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script>
-      setInterval(function () {
-        $(document).ready(function () {
-          x = document.querySelectorAll("#pp-nav > ul > li > a");
-          x.forEach(myFunc);
-          function myFunc(item) {
-            item.setAttribute("aria-label", "pageBullet");
-          }
-        });
-      }, 1000);
-    </script>
+        <script>
+          setInterval(function () {$(document).ready(function(){
+              x=document.querySelectorAll("#pp-nav > ul > li > a");
+              x.forEach(myFunc);
+              function myFunc(item){
+                item.setAttribute("aria-label","pageBullet");
+              }
+          });}, 1000);
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
